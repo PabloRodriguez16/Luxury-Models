@@ -3,6 +3,7 @@ import axios from "axios";
 import styles from "./Register.module.css";
 import { validate } from "../../helpers/validateRegister";
 import { useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'; // Importamos sweetalert2
 
 function Register() {
   const navigate = useNavigate();
@@ -28,12 +29,11 @@ function Register() {
   const [errors, setErrors] = useState(initialErrors);
 
   const handleChange = (event) => {
-    const { name, value} = event.target;
+    const { name, value } = event.target;
 
-      setFormData({ ...formData, [name]: value });
-      setErrors(validate({ ...formData, [name]: value }));
-    }
- 
+    setFormData({ ...formData, [name]: value });
+    setErrors(validate({ ...formData, [name]: value }));
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -41,9 +41,8 @@ function Register() {
 
     if (Object.keys(validationErrors).length === 0) {
       try {
-
         const response = await axios.post("http://localhost:3000/users/register", formData);
-        console.log(response)
+        console.log(response);
         setFormData({
           name: "",
           email: "",
@@ -54,7 +53,23 @@ function Register() {
         });
         navigate("/login");
       } catch (error) {
-        console.error("Error al enviar el formulario:", error);
+        Swal.fire({
+          title: 'Error',
+          text: 'Puede que el usuario ya exista...',
+          icon: 'error',
+          iconColor: '#911924',
+          background: '#222222',
+          showCancelButton: true,
+          confirmButtonText: 'Intentar de nuevo',
+          cancelButtonText: 'Ir a login',
+          cancelButtonColor: '#911924'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // User clicked 'Intentar de nuevo'
+          } else if (result.dismiss === Swal.DismissReason.cancel) {
+            navigate('/login');
+          }
+        });
       }
     } else {
       setErrors(validationErrors);
@@ -148,6 +163,5 @@ function Register() {
     </div>
   );
 }
-
 
 export default Register;

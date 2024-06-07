@@ -13,6 +13,16 @@ export const validate = (input) => {
 
     if (!input.birth_date) {
         errors.birth_date = "LA FECHA DE NACIMIENTO ES REQUERIDA";
+    } else {
+        const birthDate = new Date(input.birth_date);
+        const today = new Date();
+        const age = today.getFullYear() - birthDate.getFullYear();
+        const monthDifference = today.getMonth() - birthDate.getMonth();
+        const dayDifference = today.getDate() - birthDate.getDate();
+
+        if (age < 18 || (age === 18 && (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)))) {
+            errors.birth_date = "DEBES SER MAYOR DE EDAD";
+        }
     }
 
     if (!input.nDni || !dniRegex.test(input.nDni)) {
