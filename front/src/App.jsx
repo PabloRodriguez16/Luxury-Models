@@ -17,7 +17,7 @@ function App() {
     <div>
     <ScrollToTop />
       <div className={styles.background}>
-        {location.pathname === "/login" || location.pathname === "/register" || location.pathname === "/auth"  || location.pathname === "/aboutNotLogin" ? null : (
+        {location.pathname === "/auth"  || location.pathname === "/aboutNotLogin" ? null : (
           <Navbar />
         )}
         <div>
