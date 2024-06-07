@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #222222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; 
+}
+
+.iconAndA{
+    display: flex;
+}
+
+.navbar__buttons_nav {
+    display: flex;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.navbar__button_nav {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #e0e0e0;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.CarServiceLogo {
+    margin: 0.5em;
+}
+
+.porfileButtonLogout {
+    margin-top: 0.85em;
+    font-size: 1.1em;
+    padding: 0.2em 1em 0.5em 1em;
+    background:  #911924;
+    border: 0.1em solid rgb(238, 238, 238);
+    border-radius: 0.5em;
+    color: rgb(238, 238, 238);
+    transition: 0.5s;
+    width: 7em;
+    height: 3em;
+}

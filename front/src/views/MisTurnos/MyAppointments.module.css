@@ -1,0 +1,36 @@
+#appointmentsContent{
+    border-radius: 1em;
+    margin: 8em 2em;
+    min-width: 20em;
+    background-color: #222222;
+    padding-bottom: 4em;
+}
+
+.content {
+    margin-top: 2em;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+    font-size: 4em;
+}
+
+.button{
+    margin: 1em;
+    width: 8em;
+    height: 3em;
+    border: 0.2em solid white;
+    background-color: #911924;
+    color: white;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: #be0d1b;
+    scale: 1.1;
+}

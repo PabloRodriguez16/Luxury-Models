@@ -1,0 +1,50 @@
+.div {
+    color: white;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+    margin-bottom: 3em;
+    border-radius: 1em;
+    width: 70em;
+    min-height: 40em;
+    background-color:  #222222;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div p {
+    font-size: 1.2em;
+}
+
+.h1 {
+    margin: 0.2em;
+    font-size: 2.2em;
+}
+
+.h1Back {
+    color: #ffe0e3;
+    margin: 1em;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.h1Back:hover {
+    scale: 1.1;
+}
+
+.h2 {
+    color: #ac1a27;
+    margin: 1em;
+    font-size: 2em;
+}
+
+.h3 {
+    color: #e4a0a6;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.subtitle {
+    color: rgb(231, 231, 231);
+    scale: 1.4;
+}

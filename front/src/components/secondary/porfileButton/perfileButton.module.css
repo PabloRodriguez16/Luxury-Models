@@ -1,0 +1,34 @@
+.divButtons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin: 0px auto;
+    width: 25em;
+}
+
+.porfileButton {
+    font-size: 1.1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background:  #911924;
+    border: 0.1em solid rgb(238, 238, 238);
+    border-radius: 0.5em;
+    color: rgb(238, 238, 238);
+    transition: 0.5s;
+    width: 8em;
+}
+
+
+.porfileButtonLogout:hover {
+    background:  #be1422;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.divButtons {
+    margin-top: 0.3em;
+}
+
+.porfileButton:hover {
+    cursor: pointer;
+    scale: 1.1;
+}

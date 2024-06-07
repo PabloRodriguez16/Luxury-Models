@@ -1,0 +1,12 @@
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0.5em;
+    color: white;
+    font-size: 3em
+}
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

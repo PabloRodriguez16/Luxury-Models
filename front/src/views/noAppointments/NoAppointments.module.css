@@ -1,0 +1,30 @@
+.div {
+    border-radius: 1em;
+    margin: 8em auto 7em auto;
+    width: 80em;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 3em 1em 1em 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h1 {
+    font-size: 2.5em;
+}
+
+.button {
+    font-size: 2em;
+    width: 8em;
+    height: 2.5em;
+    margin: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+}
+
+.button:hover {
+    color: white;
+    background-color:  #911924;
+}

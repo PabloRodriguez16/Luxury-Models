@@ -1,0 +1,33 @@
+.footerDiv {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        background-color: #222222;
+        z-index: 999; 
+}
+
+.divs {
+        width: 20em;
+        height: 8em;
+        text-align: center;
+        padding: 0.8em;
+}
+
+.divs p {
+        font-size: 1.3em;
+        margin-bottom: 0.2em;
+}
+
+a {
+        text-decoration: none;
+        color: #af222e;
+}
+
+
+.img {
+        width: 5em;
+}
+
+.tools {
+        width: 4em;
+}

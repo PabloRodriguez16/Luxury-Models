@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var appointmentsController_1 = require("../controller/appointmentsController");
+var appointmentsMiddlewares_1 = require("../middlewares/appointmentsMiddlewares");
+var appointmentRouter = (0, express_1.Router)();
+appointmentRouter.get("/", appointmentsController_1.allAppointments);
+appointmentRouter.get("/appointment", appointmentsController_1.oneAppointment);
+appointmentRouter.post("/schedule", appointmentsMiddlewares_1.serviceAppointment, appointmentsController_1.createAppointment);
+appointmentRouter.put("/expired", appointmentsController_1.expiredAppointment);
+appointmentRouter.put("/", appointmentsController_1.cancelAppointment);
+exports.default = appointmentRouter;

@@ -1,0 +1,56 @@
+.cancel {
+    border: solid 0.2em #fcdb20;
+    background-color: #fcdb20;
+    padding: 0.4em;
+    margin: 0px 10em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cancel:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.AppointmentDiv {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em auto 2em auto;
+    color: white;
+    background-color: #911924;
+    width: 70em;
+}
+
+.AppointmentDivCancelled {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em auto 2em auto;
+    color: white;
+    background-image: linear-gradient(to right, #911924, rgb(61, 0, 0));
+    width: 70em;
+}
+
+
+.Appointment {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.AppointmentActive {
+    color: rgb(0, 255, 13);
+    font-size: 1.2em;
+}
+
+
+.AppointmentCancelled {
+    color: rgb(255, 0, 0);
+    font-size: 1.2em;
+}
+
+.AppointmentExpired {
+    color: rgb(253, 253, 253);
+    font-size: 1.2em;
+}

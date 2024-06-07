@@ -1,0 +1,66 @@
+.div {
+    border-radius: 1em;
+    margin: 5em auto 6em auto;
+    width: 40em;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputs {
+    font-size: 1.5em;
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+}
+
+.inputCamp {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 7.9em;
+    height: 1.3em;
+    font-size: 1.1em;
+    border-radius: 0.4em;
+    background-color: #ffffff;
+    border: 0.12em solid gray;
+}
+
+.inputCamp1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    height: 1.4em;
+    width: 8em;
+    font-size: 0.9em;
+    border-radius: 0.4em;
+    background-color: #ffffff;
+    border: 0.1em solid gray;
+}
+
+.submitButton {
+    margin: 0px auto 1em auto;
+    width: 8em;
+    height: 3em;
+    border: 0.2em solid white;
+    background-color: #911924;
+    color: white;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #be0d1b;
+    scale: 1.1;
+}
+
+.p{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.error {
+    color: #be0d1b;
+}

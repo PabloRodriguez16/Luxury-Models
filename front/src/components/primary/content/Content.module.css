@@ -1,0 +1,11 @@
+#AppointmentsDiv{
+    min-width: 40em;
+    max-width: 70em;
+    padding: 1em;
+    text-align: center;
+    margin: 8em auto 2em auto;
+    min-height: 40em;
+    background-color: #222222;
+    border-radius: 0.5em;
+}
+
